@@ -6,7 +6,9 @@ $(window).on("load", function(){
         strings: greeting,
         typeSpeed: 100,
         backSpeed: 50,
-        onComplete: function(self){$("#continue").fadeIn("slow");}
+        onComplete: function(self){
+            $("#continue").toggle("bounce", {times: 5}, "slow");
+        }
     });
 
     $("#continue").one("click", function(){
@@ -26,7 +28,7 @@ $(window).on("load", function(){
         // }, 1000);
     });
 
-    $(".icon").animate
+    
 
 
 });
