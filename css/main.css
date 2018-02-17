@@ -97,7 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 html, body {
-    height:100%;
+    height: 100%;
+    width: 100%;
 }
 
 .typed-cursor{
@@ -105,6 +106,8 @@ html, body {
 }
 
 #head{
+    height: 100%;
+    width: 100%;
     background: rgb(26, 188, 156);
 	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
@@ -144,8 +147,8 @@ html, body {
 }
 
 #continue :hover {
-    cursor: pointer;
     text-shadow: none;
+    cursor: pointer;
 }
 
 .container{
@@ -161,22 +164,21 @@ html, body {
 .icon{
     width: 20%;
     height: 20%;
-    border: solid thin gold;
     border-radius: 50%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5em;
+    font-size: 3em;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
     animation: float 4s ease-in-out infinite;
-    background: linear-gradient(lightblue, forestgreen);
+    background: radial-gradient(circle, #ff0, orange);
 }
+
 .icon:hover{
-    cursor: pointer;
-    border: solid thin white;
+    background: radial-gradient(circle, white, grey);
 }
 
 .leftIcon{
@@ -192,27 +194,38 @@ html, body {
 #contact {
     position: relative;
     top: 10%;
-    width: 20%;
-    font-size: 5em;
+    height: 3em;
+    width: 3em;
+    font-size: 2em;
+    overflow: hidden;
     margin: 0 auto;
-    text-align: center;
-    outline: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(green, white, green);
+    border-radius: 15%;
+    box-shadow: 0px 0px 10px 2px black;
 }
 
+#contact:hover {
+    box-shadow: 0px 0px 10px 2px white;
+}
+
+
 #about{
-    top: 35%;
+    top: 20%;
 }
 
 #tech {
-    top: 35%;
+    top: 20%;
 }
 
 #works {
-    top: 55%;
+    top: 35%;
 }
 
 #resume {
-    top: 55%;
+    top: 35%;
 }
 
 
@@ -252,7 +265,9 @@ html, body {
 
 
 
-
+.clickable:hover{
+    cursor: pointer;
+}
 
 /* ==========================================================================
    Helper classes
@@ -344,8 +359,16 @@ html, body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 992px) {
+    .icon{
+        border-radius: 10%;
+    }
+
+    #contact{
+        height: 4em;
+        width: 20%;
+        border-radius: 50%;
+    }
 }
 
 @media print,
