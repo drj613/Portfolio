@@ -177,6 +177,17 @@ html, body {
     }
 
 
+.ui-tooltip{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px;
+    color: white;
+}
+
 .icon{
     width: 20%;
     height: 20%;
@@ -359,7 +370,7 @@ html, body {
         box-shadow: 0px 2px 4px grey;
     }
         .devicon{
-            font-size: 3em;
+            font-size: 2em;
         }
 
 
@@ -368,7 +379,7 @@ html, body {
 }
 
 #fullworks {
-    background-image: url('../img/binaryBG.jpg');
+    background-image: url('../img/techBG.png');
     background-position: center;
     background-size: cover;
 }
@@ -575,6 +586,12 @@ html, body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 315px) and (max-width: 989px) {
+    .devicon{
+        font-size: 2em;
+    }
+}
+
 @media only screen and (min-width: 990px) {
     .icon{
         border-radius: 10%;

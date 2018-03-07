@@ -4,6 +4,21 @@ $(window).on("load", function(){
     $(".expanded").hide();
     $("#close").hide();
 
+    $("#contact").tooltip({
+        content: "Contact Info"
+    });
+    $("#about").tooltip({
+        content: "About Me"
+    });
+    $("#tech").tooltip({
+        content: "Tech"
+    });
+    $("#works").tooltip({
+        content: "Works"
+    });
+    $("#resume").tooltip({
+        content: "Resume"
+    });
     new Typed('#insertion', {
         strings: greeting,
         typeSpeed: 10,
