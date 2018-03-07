@@ -6,10 +6,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trocchi">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Krona+One|Mina|Oswald|Share+Tech+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -20,24 +20,200 @@
             <div id="continue"><i class="fa fa-angle-double-down"></i></div>
         </div>
         <div class="container hidden">
-            <div id="contact" class="clickable">
+            <div id="close">
+                <i class="fa fa-times"></i>
+            </div>
+            <div id="contact" class="icon clickable">
                 <i class="fa fa-address-card"></i>
             </div>
+            <div id="fullcontact" class="expanded">
+                <div class="contactInfo">
+                    <img id="pic" src="./img/avatar.jpg">
+                </div>
+                <div id="name" class="contactInfo">
+                    <p><strong>Daniel "DJ" John</strong></p>
+                </div>
+                <div id="email" class="contactInfo">
+                    <p><i class="fa fa-envelope"></i> daniel.john613@gmail.com</p>
+                </div>
+                <div id="phone" class="contactInfo">
+                    <p><i class="fa fa-phone"></i> 858-945-7536</p>
+                </div>
+                <div id="social" class="contactInfo">
+                    <div><a href="https://github.com/drj613" target="_blank"><i class="fa fa-github"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/drj613/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+                    <div><a href="https://www.facebook.com/drj613" target="_blank"><i class="fa fa-facebook-square"></i></a></div>
+                </div>
+            </div>
+
             <div id="about" class="leftIcon icon clickable">
                 <i class="fa fa-user"></i>
             </div> 
+            <div id="fullabout" class="expanded">
+                <div id="aboutPics"></div>
+            <div id="summWrapper">
+                <div id="aboutSummary">
+                        <p>
+                            I was born in Oceanside, CA in June of 1995. My father was in the US Navy, so in the first 10 years of my life I lived in a total of 
+                        5 different states and 2 different countries. In 2005 my family moved to San Diego, and since then I've moved 9 more times around the county.
+                        </p>
+                        <p>
+                            Most of my work experience has been from grocery stores and lab-based data entry jobs. I've always loved video games and computers, and
+                            in August of 2017 I decided to take steps to turn my hobby into my career. I completed the Coding Bootcamp at UCSD Extension in February
+                            of 2018, and am looking to land my first job in the tech industry as a Front End Web Developer. I have learned the full <abbr title="Mongo/MySQL, Express, React, Node">MERN</abbr>
+                            stack for web development, but my favorite part of making websites is designing the look and feel of them. 
+                        </p>
+                        <p>
+                            In my spare time I tinker with web projects or tutorials, and when I'm not tappity tapping at code I'm playing Smite, I'm in the gym or on a trail, 
+                            I'm spending time with friends and family, or I'm eating. A lot of the time it's that last one. 😅
+                        </p>
+                </div>
+            </div>
+            </div>
+
             <div id="tech" class="rightIcon icon clickable">
                 <i class="fa fa-wrench"></i>
             </div>
+            <div id="fulltech" class="expanded">
+                <div id="techTitle">
+                    <p>My Stack:</p><hr>
+                </div>
+                <div class="myStack" id="front-end">
+                    <div class="endTitle">
+                        <p>Front End</p>
+                    </div>
+                    <div class="techicons" id="fe">
+                        <i class="devicon devicon-html5-plain colored"></i>
+                        <i class="devicon devicon-css3-plain colored"></i>
+                        <i class="devicon devicon-javascript-plain colored"></i>
+                        <i class="devicon devicon-jquery-plain colored"></i>
+                        <i class="devicon devicon-bootstrap-plain colored"></i>
+                        <i class="devicon devicon-photoshop-line colored"></i>
+                        <i class="devicon devicon-react-original colored"></i>
+                        <i class="devicon devicon-sass-original colored"></i>
+                    </div>  
+                </div>
+                <div class="myStack" id="back-end">
+                    <div class="endTitle">
+                        <p>Back End</p>
+                    </div>
+                    <div class="techicons" id="be">
+                        <i class="devicon devicon-git-plain colored"></i>
+                        <i class="devicon devicon-heroku-plain colored"></i>
+                        <i class="devicon devicon-mysql-plain colored"></i>
+                        <i class="devicon devicon-sequelize-plain colored"></i>
+                        <i class="devicon devicon-nodejs-plain colored"></i>
+                        <i class="devicon devicon-grunt-line colored"></i>
+                        <i class="devicon devicon-mongodb-plain colored"></i>
+                    </div>
+                </div>
+            </div>
+
             <div id="works" class="leftIcon icon clickable">
                 <i class="fa fa-briefcase"></i>
             </div>
+            <div id="fullworks" class="expanded">
+                <div id="workContent">
+                    <a href="https://recre-ntals.herokuapp.com/" target="_blank">
+                        <div class="worksCard">
+                            <div class="worksImgHolder">
+                                <img class="worksImg" src="./img/recrentals.png" alt="Recre-Entals">
+                            </div>
+                            <div class="worksInfo">
+                                <h1 class="workTitle">
+                                    Recre-Entals
+                                </h1>
+                                <p>
+                                    A full stack application built with MySQL, Express, React, and Node. Allows users
+                                    to sign up and post recreational equipment for rent, as well as find equipment to rent.
+                                    When an item is chosen, users can reserve dates they will be using the equipment and can send messages 
+                                    to the equipment owner.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://game-of-trades.herokuapp.com/" target="_blank">
+                        <div class="worksCard">
+                            <div class="worksImgHolder">
+                                <img class="worksImg" src="./img/got.png" alt="Game of Trades">
+                            </div>
+                            <div class="worksInfo">
+                                <h1 class="workTitle">
+                                    Game of Trades
+                                </h1>
+                                <p>
+                                    A full stack application built with MySQL, Express, jQuery, and Bootstrap. Buy goods at low
+                                    prices based on geography and real events from the Game of Thrones series (Spoiler Alert!) in order to make as
+                                    much money as you can before the game ends. 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drj613.github.io/GIF-API/" target="_blank">
+                        <div class="worksCard">
+                            <div class="worksImgHolder">
+                                <img class="worksImg" src="./img/giphy.png" alt="Project">
+                            </div>
+                            <div class="worksInfo">
+                                <h1 class="workTitle">
+                                    Animal GIFs
+                                </h1>
+                                <p>
+                                    A front end application built with HTML, CSS, JS, jQuery. Create buttons for your favorite animals and search for
+                                    GIFs via an AJAX call to the giphy API.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://yankwong.github.io/mmo-fun/" target="_blank">
+                        <div class="worksCard">
+                                <div class="worksImgHolder">
+                                    <img class="worksImg" src="./img/poker.png" alt="Project">
+                                </div>
+                                <div class="worksInfo">
+                                    <h1 class="workTitle">
+                                        Casino Royale
+                                    </h1>
+                                    <p>
+                                        A full stack poker game running on Firebase for the backend. Front end built with Bootstrap and custom styling.
+                                        <br/>*Use two tabs side by side, as the game will not proceed with only one user.*
+                                    </p>
+                                </div>   
+                        </div>
+                    </a>
+                    <a href="https://friendfinder-dj.herokuapp.com" target="_blank">
+                        <div class="worksCard">
+                            <div class="worksImgHolder">
+                                <img class="worksImg" src="./img/friendfinder.png" alt="Friend Finder">
+                            </div>
+                            <div class="worksInfo">
+                                <h1 class="workTitle">
+                                    FriendFinder
+                                </h1>
+                                <p>
+                                    Full stack application built with MySQL, NodeJS, and Bootstrap. Answer questions to find a match for you amongst users
+                                    already within the database.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <div id="resume" class="rightIcon icon clickable">
                 <span>
                     <i class="fa fa-file-text"></i>
                     <i class="fa fa-sub fa-user"></i>
                  </span>
             </div>
+            <div id="fullresume" class="expanded">
+                <object data="./TechnicalResume.pdf" type="application/pdf" height="100%;" width="100%;">
+                    <p>Your web browser doesn't have a PDF plugin.
+                        Instead you can <a href="./TechnicalResume.pdf">click here</a> to download the pdf file.
+                    </p>
+                </object>
+            </div>
+
         </div>
         <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"

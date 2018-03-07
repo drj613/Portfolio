@@ -130,9 +130,10 @@ html, body {
     position: fixed;
 }
 
+
 #insertion{
     text-align: center;
-    font-family: 'Trocchi', serif;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 1px 1px 1px white;
 }
 
@@ -160,6 +161,21 @@ html, body {
     background: -webkit-linear-gradient(15deg, black, rgb(89, 77, 94), rgb(142, 68, 173));
     background: linear-gradient(15deg, black, rgb(89, 77, 94), rgb(142, 68, 173));
 }
+
+#close {
+    text-shadow: 0px 0px 3px black;
+    color: white;
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+    position: absolute;
+    margin-top: 1em;
+    z-index: 2;
+}
+    #close:hover{
+        cursor: pointer;
+    }
+
 
 .icon{
     width: 20%;
@@ -208,7 +224,38 @@ html, body {
 }
 
 #contact:hover {
-    box-shadow: 0px 0px 10px 2px white;
+    background: linear-gradient(purple, black, purple);
+    color: white;
+}
+
+#fullcontact {
+    flex-direction: column;
+}
+    #pic {
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px lightseagreen;
+    }
+    #name{
+        font-family: 'Krona One', sans-serif;
+        font-size: 25px;
+    }
+
+    #social {
+        display: flex;
+        width: 90%;
+        left: 5%;
+        justify-content: space-around;
+    }
+        #social > div {
+            font-size: 4em;
+        }
+        #social a:hover {
+            color: black;
+        }
+
+.contactInfo > p{
+    margin: 0.5em;
 }
 
 
@@ -216,18 +263,179 @@ html, body {
     top: 20%;
 }
 
+#fullabout{
+    display: flex;
+    flex-direction: column;
+}
+
+    #aboutPics{
+        background-image: url("../img/aboutBanner.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 1px 3px;
+        height: 30%;
+        width: 100%;
+        margin: 2%;
+    }
+    #summWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.8));
+    }
+        #aboutSummary {
+            color: rgba(255, 255, 255, 0.89);
+            text-shadow: 0px 0px 1px black;
+            overflow: auto;
+            height: 60%;
+            width: 90%;
+            margin: 2%;
+        }
+            #aboutSummary > p {
+                -webkit-margin-before: 0.5em;
+            }
+            #aboutSummary::-webkit-scrollbar{
+                width: 1px;
+                height: 1px;
+            }
+            #aboutSummary::-webkit-scrollbar-thumb{
+                background-color: rgb(244, 255, 242);
+            }
+            #aboutSummary::-webkit-scrollbar-track{
+                background-color: rgba(43, 33, 33, 0.582);
+            }
+
+
 #tech {
     top: 20%;
 }
+
+#fulltech{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+    #fulltech > div {
+        width: 100%;
+        text-align: center;
+    }
+        .endTitle{
+            font-size: 2em;
+            line-height: 1;
+            font-weight: 500;
+        }
+        #techTitle {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 2em;
+            font-weight: 600;
+        }
+            #techTitle > hr {
+                width: 80%;
+                margin-left: 10%;
+                height: 0px;
+            }
+        #front-end{
+            font-family: 'Dancing Script', cursive;
+            margin-top: -5%;
+            
+        }
+        #back-end{
+            font-family: 'Mina', sans-serif;
+        }
+
+    .myStack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .techicons{
+        width: 75%;
+        background: rgba(255, 228, 196, 0.7);
+        padding-bottom: 1em;
+        padding-top: 1em;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px grey;
+    }
+        .devicon{
+            font-size: 3em;
+        }
+
 
 #works {
     top: 35%;
 }
 
+#fullworks {
+    background-image: url('../img/binaryBG.jpg');
+    background-position: center;
+    background-size: cover;
+}
+    #workContent {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        height: 95%;
+        overflow: auto;
+    }
+        #workContent > a {
+            color: inherit;
+            text-decoration: inherit;
+          }
+
+            .worksCard{
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+                margin: 0.5em 5%;
+                box-shadow: 0px 1px 3px;
+                background: rgba(255, 255, 255, 0.678);
+                color: white;
+                text-shadow: 0px 0px 3px black;
+            }
+                .worksImgHolder{
+                    width: 200px;
+                    display: flex;
+                    align-items: center;
+                }
+                    .worksImg{
+                        height: 150px;
+                        width: 150px;
+                        align-self: center;
+                    }
+
+                .worksInfo{
+                    text-align: center;
+                }
+                    .worksInfo > p {
+                        margin: 0;
+                        color: black;
+                        text-shadow: 0px 0px 3px white;
+                        font-size: 0.8em;
+                    }
+                    .workTitle{
+                        margin: 0;
+                    }
+
 #resume {
     top: 35%;
 }
 
+.expanded {
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    border: solid black;
+    box-shadow: 0px 0px 10px black;
+    background: rgba(255, 255, 255, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
 
 @keyframes float {
 	0% {
@@ -244,6 +452,17 @@ html, body {
 	}
 }
 
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:black;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(145, 140, 140, 0.692);
+}
+
 .fa-sub {
     position: relative;
     left: -.5em;
@@ -251,8 +470,6 @@ html, body {
     vertical-align: -.25em;
     text-shadow: -1px -1px 0px white, -1px 1px 0px goldenrod, -1px 0px 0px white;
   }
-
-
 
 
 
@@ -358,8 +575,7 @@ html, body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 990px) {
     .icon{
         border-radius: 10%;
     }
@@ -369,6 +585,10 @@ html, body {
         width: 20%;
         border-radius: 50%;
     }
+
+    .devicon {
+        font-size: 5em;
+    }    
 }
 
 @media print,
