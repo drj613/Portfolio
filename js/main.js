@@ -6,10 +6,11 @@ $(window).on("load", function(){
 
     new Typed('#insertion', {
         strings: greeting,
-        // typeSpeed: 100,
-        // backSpeed: 50,
-        typeSpeed: 1,
-        backSpeed: 1,
+        typeSpeed: 10,
+        backSpeed: 5,
+        // zoom-zoom for testing and modifying
+        // typeSpeed: 1,
+        // backSpeed: 1,
         onComplete: function(self){
             $("#continue").toggle("bounce", {times: 5}, "slow");
         }
