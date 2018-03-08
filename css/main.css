@@ -419,6 +419,7 @@ html, body {
 
                 .worksInfo{
                     text-align: center;
+                    width: 50%;
                 }
                     .worksInfo > p {
                         margin: 0;
