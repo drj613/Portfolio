@@ -163,13 +163,13 @@ html, body {
 }
 
 #close {
+    font-size: 2em;
     text-shadow: 0px 0px 3px black;
     color: white;
     height: 2em;
     width: 2em;
-    margin-left: 1em;
+    margin-left: 0.5em;
     position: absolute;
-    margin-top: 1em;
     z-index: 2;
 }
     #close:hover{
@@ -296,6 +296,7 @@ html, body {
         background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.8));
     }
         #aboutSummary {
+            text-align: center;
             color: rgba(255, 255, 255, 0.89);
             text-shadow: 0px 0px 1px black;
             overflow: auto;
@@ -303,9 +304,21 @@ html, body {
             width: 90%;
             margin: 2%;
         }
-            #aboutSummary > p {
-                -webkit-margin-before: 0.5em;
+        .secondary{
+            padding: 0.5em;
+            font-weight: 300;
+        }
+        .primary{
+            border-radius: 5px;
+            border: solid thin grey;
+            padding: 0.5em;
+            font-weight: 500;
+        }
+            #aboutSummary > div > p {
+                -webkit-margin-before: 0em;
+                -webkit-margin-after: 0em;
             }
+            
             #aboutSummary::-webkit-scrollbar{
                 width: 1px;
                 height: 1px;
@@ -436,6 +449,7 @@ html, body {
 }
 
 .expanded {
+    /* display: none; */
     height: 90%;
     width: 90%;
     top: 5%;

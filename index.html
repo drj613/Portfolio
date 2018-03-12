@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Portfolio</title>
+        <meta name="description" content="A little about me, some of the applications I've created, and the technology I have experience with.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="manifest" href="site.webmanifest">
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Krona+One|Mina|Oswald|Share+Tech+Mono" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -16,7 +17,7 @@
     <body>
         <div id="head">
             <div id="insertion" class="centered"></div>
-            <div id="continue"><i class="fa fa-angle-double-down"></i></div>
+            <div id="continue" style="display: none;"><i class="fa fa-angle-double-down"></i></div>
         </div>
         <div class="container hidden">
             <div id="close">
@@ -52,20 +53,26 @@
                 <div id="aboutPics"></div>
                 <div id="summWrapper">
                     <div id="aboutSummary">
+                        <div  class="secondary">
                             <p>
                                 I was born in Oceanside, CA in June of 1995. My father was in the US Navy, so in the first 10 years of my life I lived in a total of 
                             5 different states and 2 different countries. In 2005 my family moved to San Diego, and since then I've moved 9 more times around the county.
                             </p>
+                        </div>
+                        <div class="primary">
                             <p>
-                                Most of my work experience has been from grocery stores and lab-based data entry jobs. I've always loved video games and computers, and
+                                Most of my work experience has been from service and lab-based data entry jobs. I've always loved video games and computers, and
                                 in August of 2017 I decided to take steps to turn my hobby into my career. I completed the Coding Bootcamp at UCSD Extension in February
                                 of 2018, and am looking to land my first job in the tech industry as a Front End Web Developer. I have learned the full <abbr title="Mongo/MySQL, Express, React, Node">MERN</abbr>
                                 stack for web development, but my favorite part of making websites is designing the look and feel of them. 
                             </p>
+                        </div>
+                        <div class="secondary">
                             <p>
                                 In my spare time I tinker with web projects or tutorials, and when I'm not tappity tapping at code I'm playing Smite, I'm in the gym or on a trail, 
                                 I'm spending time with friends and family, or I'm eating. A lot of the time it's that last one.
                             </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,7 +194,7 @@
                             </div>
                             <div class="worksInfo">
                                 <h1 class="workTitle">
-                                    FriendFinder
+                                    Friend Finder
                                 </h1>
                                 <p>
                                     Full stack application built with MySQL, NodeJS, and Bootstrap. Answer questions to find a match for you amongst users

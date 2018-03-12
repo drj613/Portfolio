@@ -1,6 +1,5 @@
 $(window).on("load", function(){
     var greeting = [ "<h1>Hello! </h1>", "<h1>I'm DJ.</h1>", "<h1>Welcome to my portfolio!</h1>", "<h1>Click below to learn more about me. :)</h1>" ];
-    $("#continue").hide();
     $(".expanded").hide();
     $("#close").hide();
 
@@ -65,6 +64,7 @@ $(window).on("load", function(){
     
     $(".icon").on("click", function(){
         let toShow = "#" + "full" + this.id;
+        $("#"+this.id).tooltip("close");
         hideIcons();
         $(toShow).toggle("puff");
         $("#close").show();
