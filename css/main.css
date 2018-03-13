@@ -348,6 +348,10 @@ html, body {
             line-height: 1;
             font-weight: 500;
         }
+            .endTitle > p {
+                -webkit-margin-after: 0.5em;
+                -webkit-margin-before: 0.5em;
+            }
         #techTitle {
             font-family: 'Share Tech Mono', monospace;
             font-size: 2em;
@@ -360,7 +364,6 @@ html, body {
             }
         #front-end{
             font-family: 'Dancing Script', cursive;
-            margin-top: -5%;
             
         }
         #back-end{
@@ -620,6 +623,10 @@ html, body {
     .devicon {
         font-size: 5em;
     }    
+
+    #back-end{
+        padding-top: 0.5em;
+    }
 }
 
 @media print,
