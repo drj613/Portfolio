@@ -611,7 +611,7 @@ html, body {
 
 @media only screen and (min-width: 990px) {
     .icon{
-        border-radius: 10%;
+        border-radius: 1px;
     }
 
     #contact{
